@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Entered Movies Shown Below:</h1><br><br>
+<ul>
+{% for x in movie_lst %}
+    <li><strong>Movie Title: </strong>{{ x[3] }}<br>
+    <strong>Year Releasted: </strong>{{ x[1] }}<br>
+    <strong>Rated: </strong>{{ x[2] }}<br>
+    <strong>Director: </strong>{{ x[0] }}<br></li>
+
+{% endfor %}
+</ul>
+{% endblock %}

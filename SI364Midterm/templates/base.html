@@ -1,0 +1,19 @@
+{% block content %}
+
+
+{% endblock %}
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
+<div>
+ <ul>
+    <li><a href="{{ url_for('movie_entry') }}">Movie Entry</a>
+    <li><a href="{{ url_for('answers') }}">Searched Movie Info</a>
+    <li><a href="{{ url_for('reviews') }}">Movie Reviews</a>
+
+</li>
+</ul>
+</div>
